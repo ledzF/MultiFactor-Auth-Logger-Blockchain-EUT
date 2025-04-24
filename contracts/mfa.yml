@@ -1,0 +1,51 @@
+const contractAddress = "Enter your Contract Address"; 
+    const abi = [
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "userId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "action",
+            "type": "string"
+          }
+        ],
+        "name": "addLog",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getLogs",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "userId",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "action",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MFAAuthLogger.Log[]",
+            "name": "",
+            "type": "tuple[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ];
